@@ -1,33 +1,25 @@
+
 CREATE TABLE product (
-"PRODUCTID" text PRIMARY KEY,
-"PRODUCTNDC" text,
-"PRODUCTTYPENAME" text,
-"PROPRIETARYNAME" text,
-"PROPRIETARYNAMESUFFIX" text,
-"NONPROPRIETARYNAME" text,
-"DOSAGEFORMNAME" text,
-"ROUTENAME" text,
-"STARTMARKETINGDATE" text,
-"ENDMARKETINGDATE" text,
-"MARKETINGCATEGORYNAME" text,
-"APPLICATIONNUMBER" text,
-"LABELERNAME" text,
-"SUBSTANCENAME" text,
-"ACTIVE_NUMERATOR_STRENGTH" text,
-"ACTIVE_INGRED_UNIT" text,
-"PHARM_CLASSES" text,
-"DEASCHEDULE" text,
-"NDC_EXCLUDE_FLAG" text,
-"LISTING_RECORD_CERTIFIED_THROUGH" text
+product_id text PRIMARY KEY,
+product_type_name text,
+proprietary_name text,
+substance_name text,
+non_proprietary_name text,
+dosage_form text,
+route text,
+active_numerator_strength text,
+active_ingredient_unit text,
+pharm_class text,
+dea_schedule text,
+manufacturer text,
+start_marketing_date text,
+end_marketing_date text
 );
 
 CREATE TABLE package (
-"PRODUCTID" text PRIMARY KEY,
-"PRODUCTNDC" text,
-"NDCPACKAGECODE" text,
-"PACKAGEDESCRIPTION" text,
-"STARTMARKETINGDATE" text,
-"ENDMARKETINGDATE" text,
-"NDC_EXCLUDE_FLAG" text,
-"SAMPLE_PACKAGE" text
+product_id text PRIMARY KEY,
+product_ndc text,
+ndc_package_code text,
+package_description text,
+sample_package text
 );
