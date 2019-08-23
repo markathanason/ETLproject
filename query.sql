@@ -1,3 +1,3 @@
 SELECT * FROM package
 INNER JOIN product
-ON package."PRODUCTID" = product."PRODUCTID";
+ON package.product_id = product.product_id;

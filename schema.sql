@@ -1,6 +1,6 @@
-
 CREATE TABLE product (
 product_id text PRIMARY KEY,
+product_ndc text,
 product_type_name text,
 proprietary_name text,
 substance_name text,
